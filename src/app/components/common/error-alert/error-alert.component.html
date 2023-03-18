@@ -1,0 +1,14 @@
+<div class="m-10">
+  <div class="alert alert-error shadow-lg">
+    <div>
+      <app-icon-error />
+      <span i18n>
+        An error occurred while trying to connect to the server.
+        Try again, and if the problem persists, contact the site administrator.
+      </span>
+    </div>
+    <div>
+      <button class="btn btn-outline" (click)="onTryAgain()" i18n>Try again</button>
+    </div>
+  </div>
+</div>

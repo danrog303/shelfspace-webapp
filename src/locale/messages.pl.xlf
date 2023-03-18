@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="2159130950882492111" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/confirmation-modal/confirmation-modal.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-delete/shelf-delete.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="124058212135612386" datatype="html">
+        <source> An error occurred while trying to connect to the server. Try again, and if the problem persists, contact the site administrator. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/error-alert/error-alert.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6650633628037596693" datatype="html">
+        <source>Try again</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/error-alert/error-alert.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1305357231288135414" datatype="html">
+        <source>Homepage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navbar/navbar.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navbar/navbar.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7906041908726893493" datatype="html">
+        <source>My shelves</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navbar/navbar.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navbar/navbar.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4445512363619371529" datatype="html">
+        <source>(Log in)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navbar/navbar.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9051294443531380964" datatype="html">
+        <source>(Log out)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/navbar/navbar.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4299467318965233262" datatype="html">
+        <source> Loading... </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/common/spinner/spinner.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="409183073999682806" datatype="html">
+        <source> An open source tool for creating shelves of books, games or movies. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/homepage/homepage.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="413018283291523863" datatype="html">
+        <source> Join ShelfSpace </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/homepage/homepage.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3537220534136529934" datatype="html">
+        <source> Go to shelf editor </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/homepage/homepage.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7515883357904500238" datatype="html">
+        <source>Are you sure?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-delete/shelf-delete.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-delete/shelf-item-delete.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8949973292526610904" datatype="html">
+        <source> Are you sure you want to remove this shelf? Along with the shelf, all items on this shelf will be removed. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-delete/shelf-delete.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7242745254143062268" datatype="html">
+        <source>Delete the shelf</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-delete/shelf-delete.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="351944812188384473" datatype="html">
+        <source>Delete this shelf</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5936506552532786395" datatype="html">
+        <source>Edit this shelf</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3901785231622498080" datatype="html">
+        <source>Add new item</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5701618810648052610" datatype="html">
+        <source>Title</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="231679111972850796" datatype="html">
+        <source>Added</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5611592591303869712" datatype="html">
+        <source>Status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3706222784708785028" datatype="html">
+        <source>Rating</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6731093750762997264" datatype="html">
+        <source>Finished count</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3193976279273491157" datatype="html">
+        <source>Actions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8446875339104617088" datatype="html">
+        <source>Planned</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5273750484998241238" datatype="html">
+        <source>Dropped</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="340430316261570792" datatype="html">
+        <source>Finished</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8782469084196761379" datatype="html">
+        <source>Stalled</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7022070615528435141" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7585826646011739428" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6464402669340957276" datatype="html">
+        <source> You don&apos;t have any item on this shelf yet. Add some! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-details/shelf-details.component.html</context>
+          <context context-type="linenumber">89,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2801400947978543946" datatype="html">
+        <source>No shelves</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-display/shelf-display.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5104437966522763136" datatype="html">
+        <source>You did not create any shelf yet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-display/shelf-display.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8412294822966720338" datatype="html">
+        <source>Create a shelf</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-display/shelf-display.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-display/shelf-display.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4004100685901129412" datatype="html">
+        <source>Shelf name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3074987902485823708" datatype="html">
+        <source>Icon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="794448955264394722" datatype="html">
+        <source> Game </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1215020689044739662" datatype="html">
+        <source> Book </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7776619666387522358" datatype="html">
+        <source> Movie/series </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8605967835704545279" datatype="html">
+        <source> Other </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7713165459615958652" datatype="html">
+        <source> An error occurred while saving the shelf. Check the quality of your internet connection or contact your administrator. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">41,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2671281207852859964" datatype="html">
+        <source> You have exceeded the allowed number of shelves. You need to delete some in order to create a new one. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3768927257183755959" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-edit/shelf-edit.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="96076707851857741" datatype="html">
+        <source>Delete the item</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-delete/shelf-item-delete.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6915370507821008984" datatype="html">
+        <source>Are you sure you want do delete this item?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-delete/shelf-item-delete.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4322410795353818423" datatype="html">
+        <source>Edit the item</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8302382861080013549" datatype="html">
+        <source>Create a new item</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7145879116916621837" datatype="html">
+        <source>Title/name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6489485252617215452" datatype="html">
+        <source>How many times completed?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2974479559069626213" datatype="html">
+        <source>Rate the item</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="990650781065263400" datatype="html">
+        <source> An error occurred while saving the item. Check the quality of your internet connection or contact your administrator. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">64,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5174597133433260507" datatype="html">
+        <source> You have exceeded the allowed number of items on this shelf. You need to remove some to be able to create a new one. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf-item-edit/shelf-item-edit.component.html</context>
+          <context context-type="linenumber">69,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6708916977727885971" datatype="html">
+        <source>Go to items</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/shelves/shelf/shelf.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

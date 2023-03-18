@@ -1,0 +1,84 @@
+<div class="modal modal-open">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">
+      <ng-container *ngIf="editMode" i18n>Edit the item</ng-container>
+      <ng-container *ngIf="!editMode" i18n>Create a new item</ng-container>
+    </h3>
+
+    <form #shelfItemEditForm="ngForm" (ngSubmit)="onSaveItem(shelfItemEditForm)">
+      <div class="py-4">
+        <div class="form-control w-full max-w-xs">
+          <label class="label" for="shelf-item-edit-title">
+            <span class="label-text">
+              <ng-container i18n>Title/name</ng-container> (*)
+            </span>
+          </label>
+          <input type="text" class="input input-bordered w-full max-w-xs"
+                 [ngModel]="editedItem?.title" required minlength="3" maxlength="128" name="title" id="shelf-item-edit-title" />
+        </div>
+
+        <div class="form-control w-full max-w-xs">
+          <label class="label" for="shelf-item-edit-status">
+            <span class="label-text">
+              <ng-container i18n>Status</ng-container> (*)
+            </span>
+          </label>
+          <select class="select select-bordered" [(ngModel)]="chosenItemStatus"
+                  required name="status" id="shelf-item-edit-status">
+            <option value="PLANNED" i18n>Planned</option>
+            <option value="FINISHED" i18n>Finished</option>
+            <option value="STALLED" i18n>Stalled</option>
+            <option value="DROPPED" i18n>Dropped</option>
+            <option value="IN_PROGRESS" i18n>In progress</option>
+          </select>
+        </div>
+
+        <div class="form-control w-full max-w-xs" *ngIf="chosenItemStatus === 'FINISHED'">
+          <label class="label" for="shelf-item-edit-finished-count">
+            <span class="label-text" i18n>How many times completed?</span>
+          </label>
+          <input type="number" class="input input-bordered w-full max-w-xs" id="shelf-item-edit-finished-count"
+                 required [ngModel]="editedItem?.finishedCount ?? 1" min="1" max="2000" name="finishedCount" />
+        </div>
+
+        <ng-container *ngIf="chosenItemStatus !== 'PLANNED'">
+          <label class="label" for="shelf-item-edit-rating">
+            <span class="label-text" i18n>Rate the item</span>
+          </label>
+
+          <div class="rating rating-lg rating-half" id="shelf-item-edit-rating">
+            <input type="radio" name="rating" ngModel value="0" class="rating-hidden" checked />
+            <input type="radio" name="rating" ngModel value="1" class="bg-primary mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating" ngModel value="2" class="bg-primary mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating" ngModel value="3" class="bg-primary mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating" ngModel value="4" class="bg-primary mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating" ngModel value="5" class="bg-primary mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating" ngModel value="6" class="bg-primary mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating" ngModel value="7" class="bg-primary mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating" ngModel value="8" class="bg-primary mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating" ngModel value="9" class="bg-primary mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating" ngModel value="10" class="bg-primary mask mask-star-2 mask-half-2" />
+          </div>
+        </ng-container>
+      </div>
+
+      <p class="text-error pt-3" *ngIf="error" i18n>
+        An error occurred while saving the item. Check the quality of your internet connection
+        or contact your administrator.
+      </p>
+
+      <p class="pt-3" *ngIf="quotaExceeded" i18n>
+        You have exceeded the allowed number of items on this shelf.
+        You need to remove some to be able to create a new one.
+      </p>
+
+      <div class="modal-action">
+        <button class="btn" type="button" (click)="this.close.emit()">Anuluj</button>
+        <button class="btn" type="submit" [disabled]="!shelfItemEditForm.valid || pending">
+          <span *ngIf="!pending" i18n>Save</span>
+          <app-spinner *ngIf="pending" />
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

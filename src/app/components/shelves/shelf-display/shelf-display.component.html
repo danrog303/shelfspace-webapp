@@ -1,0 +1,28 @@
+<div class="flex flex-wrap justify-center items-center" *ngIf="!loading">
+  <app-shelf *ngFor="let shelf of shelves"
+             [shelfName]="shelf.shelfName"
+             [shelfType]="shelf.shelfType"
+             [shelfId]="shelf.shelfId" />
+
+  <ng-container *ngIf="!error">
+    <div *ngIf="shelves.length === 0" class="card w-96 bg-base-100 shadow-xl m-3 mt-5 text-center border-2 p-4">
+      <h3 class="text-lg font-semibold" i18n>No shelves</h3>
+      <p i18n>You did not create any shelf yet.</p>
+      <button class="btn btn-primary" (click)="onShelfCreate()" i18n>Create a shelf</button>
+    </div>
+
+    <button class="btn gap-2 btn-outline hover:btn-primary" *ngIf="shelves.length >= 1" (click)="onShelfCreate()">
+      <span class="font-extrabold">+</span>
+      <ng-container i18n>Create a shelf</ng-container>
+    </button>
+
+    <app-shelf-edit *ngIf="shelfCreating" (close)="shelfCreating = false" (shelfCreated)="fetchShelves()"/>
+  </ng-container>
+
+  <app-error-alert *ngIf="error" (tryAgain)="fetchShelves()" />
+</div>
+
+<div class="mt-10" *ngIf="loading">
+  <app-spinner />
+</div>
+

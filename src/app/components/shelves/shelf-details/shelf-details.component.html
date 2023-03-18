@@ -1,0 +1,94 @@
+<app-spinner *ngIf="loading" />
+
+<div class="flex flex-row-reverse p-5" *ngIf="!error">
+  <button class="btn btn-sm gap-2 mx-2" (click)="onShelfDelete()">
+    <app-icon-delete />
+    <ng-container i18n>Delete this shelf</ng-container>
+  </button>
+
+  <button class="btn btn-sm gap-2 mx-2" (click)="onShelfEdit()">
+    <app-icon-edit />
+    <ng-container i18n>Edit this shelf</ng-container>
+  </button>
+
+  <button class="btn btn-sm gap-2 mx-2" (click)="onShelfItemCreate()">
+    <app-icon-add />
+    <ng-container i18n>Add new item</ng-container>
+  </button>
+</div>
+
+<app-error-alert *ngIf="error" (tryAgain)="refreshShelfDetails()" />
+
+<app-shelf-edit *ngIf="editingShelf" [editedShelf]="shelf" (close)="this.editingShelf = false" />
+<app-shelf-delete *ngIf="deletingShelf" [shelfToDelete]="shelf" (close)="this.deletingShelf = false" />
+
+<app-shelf-item-edit *ngIf="editingShelfItem" (close)="this.editingShelfItem = false"
+                     [editedItem]="editedShelfItem" [shelfId]="shelf?.shelfId ?? ''"
+                     (itemSaved)="refreshShelfDetails()"/>
+
+<app-shelf-item-delete *ngIf="deletingShelfItem" [shelfId]="shelf?.shelfId ?? ''" [itemToDelete]="deletedShelfItem"
+                       (close)="this.deletingShelfItem = false" (itemDeleted)="refreshShelfDetails()" />
+
+<div class="overflow-x-auto w-full" *ngIf="!loading && shelf !== null && !error">
+  <table class="table w-full">
+    <thead class="bg-base-100">
+      <tr>
+        <th i18n>Title</th>
+        <th i18n>Added</th>
+        <th i18n>Status</th>
+        <th i18n>Rating</th>
+        <th i18n>Finished count</th>
+        <th i18n>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let shelfItem of shelf.items">
+        <td>
+          {{ shelfItem.title }}
+        </td>
+
+        <td>
+          {{ shelfItem.creationDate | date:'dd.MM.yyyy, HH:mm' }}
+        </td>
+
+        <td [ngSwitch]="shelfItem.status">
+          <span *ngSwitchCase="'PLANNED'" class="badge badge-info gap-2" i18n>Planned</span>
+          <span *ngSwitchCase="'DROPPED'" class="badge badge-error gap-2" i18n>Dropped</span>
+          <span *ngSwitchCase="'FINISHED'" class="badge badge-success gap-2" i18n>Finished</span>
+          <span *ngSwitchCase="'STALLED'" class="badge badge-warning gap-2" i18n>Stalled</span>
+          <span *ngSwitchCase="'IN_PROGRESS'" class="badge badge-primary gap-2" i18n>In progress</span>
+        </td>
+
+        <td>
+          <div class="rating rating-sm rating-half cursor-not-allowed">
+            <input disabled type="radio" class="rating-hidden" [checked]="shelfItem.rating === null || shelfItem.status === 'PLANNED'" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-1" [checked]="shelfItem.rating === 1" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-2" [checked]="shelfItem.rating === 2" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-1" [checked]="shelfItem.rating === 3" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-2" [checked]="shelfItem.rating === 4" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-1" [checked]="shelfItem.rating === 5" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-2" [checked]="shelfItem.rating === 6" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-1" [checked]="shelfItem.rating === 7" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-2" [checked]="shelfItem.rating === 8" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-1" [checked]="shelfItem.rating === 9" />
+            <input disabled type="radio" class="bg-primary mask mask-star-2 mask-half-2" [checked]="shelfItem.rating === 10" />
+          </div>
+        </td>
+
+        <td>
+          {{ shelfItem.finishedCount ?? '-' }}
+        </td>
+
+        <td>
+          <button class="btn btn-danger btn-xs mr-1" (click)="onShelfItemDelete(shelfItem)" i18n>Delete</button>
+          <button class="btn btn-primary btn-xs" (click)="onShelfItemEdit(shelfItem)" i18n>Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="text-center font-semibold my-6" *ngIf="shelf.items.length === 0" i18n>
+    You don't have any item on this shelf yet.
+    Add some!
+  </p>
+</div>

@@ -1,0 +1,9 @@
+<app-confirmation-modal actionName="Delete the item"
+                        heading="Are you sure?"
+                        description="Are you sure you want do delete this item?"
+                        i18n-actionName
+                        i18n-heading
+                        i18n-description
+                        [pending]="deleting"
+                        (actionConfirmed)="onDeleteItem()"
+                        (close)="onCancel()" />

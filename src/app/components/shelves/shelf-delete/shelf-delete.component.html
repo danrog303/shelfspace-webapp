@@ -1,0 +1,16 @@
+<div class="modal modal-open">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg" i18n>Are you sure?</h3>
+    <p class="py-4" i18n>
+      Are you sure you want to remove this shelf?
+      Along with the shelf, all items on this shelf will be removed.
+    </p>
+    <div class="modal-action">
+      <button class="btn" (click)="onCancel()" i18n>Cancel</button>
+      <button class="btn btn-primary" (click)="onDeleteShelf()" [disabled]="deleting">
+        <span *ngIf="!deleting" i18n>Delete the shelf</span>
+        <app-spinner *ngIf="deleting" />
+      </button>
+    </div>
+  </div>
+</div>
